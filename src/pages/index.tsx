@@ -1,29 +1,92 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 import Seo from "../components/seo"
 import HeroSection from "./indexComponents/HeroSection"
 import ShowCaseSection from "./indexComponents/ShowCaseSection"
 import IdeaSection from "./indexComponents/IdeaSection"
-import ShowCaseVideo from "./indexComponents/ShowCaseVideo"
-import WarningsMistakesShowCase from "./indexComponents/WarningsMistakesShowCase"
-import ExtrasShowcase from "./indexComponents/ExtrasShowcase"
+import ShowCaseVideo from "./indexComponents/ShowCaseVideo/ShowCaseVideo"
 import DuosShowCase from "./indexComponents/DuosShowCase"
 import EndSection from "./indexComponents/EndSection"
 import Header from "../components/Header"
+import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax"
+import Teaser from "./indexComponents/warningsMistakesShowCase/Teaser"
+import WarningsShow from "./indexComponents/warningsMistakesShowCase/WarningsShow"
+import MistakeShow from "./indexComponents/warningsMistakesShowCase/MistakeShow"
+import EndingsWM from "./indexComponents/warningsMistakesShowCase/EndingsWM"
+import HeaderShowCase from "./indexComponents/extrasShowCase/HeaderShowCase"
+import SurahsShowCase from "./indexComponents/extrasShowCase/SurahsShowCase"
+import DuosIntroduction from "./indexComponents/extrasShowCase/DuosIntroduction"
 
-const IndexPage = () => (
-  <div>
-    <Header />
-    <HeroSection />
-    <IdeaSection />
-    <ShowCaseVideo />
-    <WarningsMistakesShowCase />
-    <ExtrasShowcase />
-    <DuosShowCase />
-    <EndSection />
-  </div>
-)
+const IndexPage = () => {
+  const url = (name: string, wrap = false) =>
+    `${
+      wrap ? "url(" : ""
+    }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
+      wrap ? ")" : ""
+    }`
+  const parallax = React.useRef<IParallax>(null!)
+  return (
+    <div className="w-full h-full">
+      <Header parallaxRef={parallax} />
+      <Parallax pages={13} ref={parallax}>
+        <ParallaxLayer offset={0} speed={0.2}>
+          <HeroSection />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={1}
+          factor={1.5}
+          speed={2}
+          className="bg-yellow-50"
+        />
+
+        <ParallaxLayer offset={1} speed={0.2} className="snap-center">
+          <ShowCaseSection />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={0.2}>
+          <IdeaSection />
+        </ParallaxLayer>
+        <ShowCaseVideo />
+        <ParallaxLayer offset={4} speed={0.2}>
+          <Teaser />
+        </ParallaxLayer>
+        <ParallaxLayer offset={5} speed={0.2}>
+          <WarningsShow />
+        </ParallaxLayer>
+        <ParallaxLayer offset={6} speed={0.2}>
+          <MistakeShow />
+        </ParallaxLayer>
+        <ParallaxLayer offset={7} speed={0.2}>
+          <EndingsWM />
+        </ParallaxLayer>
+        <ParallaxLayer offset={8} speed={0.2}>
+          <HeaderShowCase />
+        </ParallaxLayer>
+        <ParallaxLayer offset={9} speed={0.2}>
+          <SurahsShowCase />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={10} speed={0.2}>
+          <DuosIntroduction />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={10.98}
+          factor={5}
+          speed={2}
+          className="bg-[#34d399]/30"
+        />
+        <ParallaxLayer offset={11} speed={0.2}>
+          <DuosShowCase />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={12} speed={0.2}>
+          <EndSection />
+        </ParallaxLayer>
+      </Parallax>
+    </div>
+  )
+}
 
 export const Head = () => <Seo title="الرئيسية" />
 

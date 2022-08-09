@@ -4,11 +4,12 @@ import appLogo from "../../images/logo.png"
 import appStoreDownload from "../../images/appStoreDownload.svg"
 import googlePlayDownload from "../../images/google-play-badge.png"
 import ShowCaseSection from "./ShowCaseSection"
+import { ParallaxLayer } from "@react-spring/parallax"
 const HeroSection = () => {
   return (
     <div
       id="main"
-      className="min-h-screen flex flex-col items-center justify-center mt-36"
+      className="min-h-screen flex flex-col items-center justify-center lg:mt-10"
     >
       <div className="flex flex-col items-center justify-center ">
         <img src={appLogo} className="h-20 w-20 rounded-lg mb-10" />
@@ -24,7 +25,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <ShowCaseSection />
     </div>
   )
 }

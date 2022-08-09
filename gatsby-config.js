@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `تطبيق معين`,
+    title: `معين`,
     description: `الرفيق المساعد في حفظ وتثبيت القرآن الكريم`,
     author: `@faisal7dad`,
     // siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
