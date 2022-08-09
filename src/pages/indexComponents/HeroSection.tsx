@@ -6,7 +6,10 @@ import googlePlayDownload from "../../images/google-play-badge.png"
 import ShowCaseSection from "./ShowCaseSection"
 const HeroSection = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center mt-36">
+    <div
+      id="main"
+      className="min-h-screen flex flex-col items-center justify-center mt-36"
+    >
       <div className="flex flex-col items-center justify-center ">
         <img src={appLogo} className="h-20 w-20 rounded-lg mb-10" />
         <div className="lg:w-2/4 px-5 lg:px-10">

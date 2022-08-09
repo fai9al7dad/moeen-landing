@@ -3,7 +3,10 @@ import React from "react"
 import DuoScreen from "../../images/duoShowCase.png"
 export default function DuosShowCase() {
   return (
-    <div className=" flex flex-col items-center justify-center mt-40 lg:h-screen">
+    <div
+      id="duo"
+      className=" flex flex-col items-center justify-center mt-40 lg:h-screen"
+    >
       <div className="lg:w-2/4 px-5 lg:px-0">
         <div className="grid lg:grid-cols-2 mb-20 gap-10">
           <img src={DuoScreen} />

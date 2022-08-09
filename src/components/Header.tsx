@@ -26,14 +26,23 @@ export default function Header() {
               </svg>
               <img src={appLogo} className="w-14 rounded-lg" />
             </div>
-            <div className="hidden lg:block">
-              <div className="flex items-center ">
-                <div className="ml-5">الرئيسية</div>
-                <div className="ml-5">مقطع تعريفي</div>
-                <div className="ml-5">التنيهات والأخطاء</div>
-                <div className="ml-5">الثنائيات</div>
+            {/* <div className="hidden lg:block">
+              <div className="flex items-center text-sm">
+                <a href="#idea" className="block ml-3">
+                  الفكرة
+                </a>
+
+                <a href="#video" className="block ml-3">
+                  مقطع تعريفي
+                </a>
+                <a href="#warnings" className="block ml-3">
+                  التحديد
+                </a>
+                <a href="#duo" className="block ml-3">
+                  الثنائيات
+                </a>
               </div>
-            </div>
+            </div> */}
 
             <div className="hidden lg:block">
               <div className=" flex lg:flex-row items-center justify-center relative">
@@ -61,10 +70,41 @@ export default function Header() {
               ></path>
             </svg>
             <div className="text-6xl bold mb-10">تصفح سريع</div>
-            <div className="ml-5 text-4xl mt-7">الرئيسية</div>
-            <div className="ml-5 text-4xl mt-7">مقطع تعريفي</div>
-            <div className="ml-5 text-4xl mt-7">التنيهات والأخطاء</div>
-            <div className="ml-5 text-4xl mt-7">الثنائيات</div>
+            <a
+              onClick={() => setShowList(false)}
+              href="#main"
+              className="ml-5 text-4xl mt-7 block"
+            >
+              الرئيسية
+            </a>
+            <a
+              onClick={() => setShowList(false)}
+              href="#idea"
+              className="ml-5 text-4xl mt-7 block"
+            >
+              الفكرة
+            </a>
+            <a
+              onClick={() => setShowList(false)}
+              href="#video"
+              className="ml-5 text-4xl mt-7 block"
+            >
+              مقطع تعريفي
+            </a>
+            <a
+              onClick={() => setShowList(false)}
+              href="#warnings"
+              className="ml-5 text-4xl mt-7 block"
+            >
+              التحديد
+            </a>
+            <a
+              onClick={() => setShowList(false)}
+              href="#duo"
+              className="ml-5 text-4xl mt-7 block"
+            >
+              الثنائيات
+            </a>
           </div>
           <div className=" flex items-center justify-center relative">
             <img src={appStoreDownload} className="w-48" />
