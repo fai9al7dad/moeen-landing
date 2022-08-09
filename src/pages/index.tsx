@@ -16,7 +16,9 @@ import EndingsWM from "./indexComponents/warningsMistakesShowCase/EndingsWM"
 import HeaderShowCase from "./indexComponents/extrasShowCase/HeaderShowCase"
 import SurahsShowCase from "./indexComponents/extrasShowCase/SurahsShowCase"
 import DuosIntroduction from "./indexComponents/extrasShowCase/DuosIntroduction"
-
+import one from "../images/phone_svg/one.svg"
+import two from "../images/phone_svg/two.svg"
+import three from "../images/phone_svg/three.svg"
 const IndexPage = () => {
   const url = (name: string, wrap = false) =>
     `${
@@ -50,8 +52,14 @@ const IndexPage = () => {
         <ParallaxLayer offset={4} speed={0.2}>
           <Teaser />
         </ParallaxLayer>
+        <ParallaxLayer offset={5.1} speed={0.1}>
+          <img src={one} className="ml-[60%] lg:ml-[80%] w-28" />
+        </ParallaxLayer>
         <ParallaxLayer offset={5} speed={0.2}>
           <WarningsShow />
+        </ParallaxLayer>
+        <ParallaxLayer offset={6.1} speed={0.1}>
+          <img src={three} className="ml-[60%] lg:ml-[80%] w-32" />
         </ParallaxLayer>
         <ParallaxLayer offset={6} speed={0.2}>
           <MistakeShow />
