@@ -76,6 +76,7 @@ export default function ShowCaseVideo() {
               height="240"
               autoPlay
               muted
+              controls
               loop
             >
               <source src={video} type="video/mp4" />

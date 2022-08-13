@@ -20,6 +20,8 @@ import one from "../images/phone_svg/one.svg"
 import two from "../images/phone_svg/two.svg"
 import three from "../images/phone_svg/three.svg"
 import "../styles/global.css"
+import DuosScreen from "../components/indexComponents/ShowCaseVideo/DuosScreen"
+import DuoWerds from "../components/indexComponents/ShowCaseVideo/DuoWerds"
 
 const IndexPage = () => {
   const url = (name: string, wrap = false) =>
@@ -32,7 +34,7 @@ const IndexPage = () => {
   return (
     <div className="w-full h-full">
       <Header parallaxRef={parallax} />
-      <Parallax pages={13} ref={parallax}>
+      <Parallax pages={14} ref={parallax}>
         <ParallaxLayer offset={0} speed={0.2}>
           <HeroSection />
         </ParallaxLayer>
@@ -82,15 +84,18 @@ const IndexPage = () => {
 
         <ParallaxLayer
           offset={10.98}
-          factor={5}
+          factor={7}
           speed={2}
           className="bg-[#34d399]/30"
         />
         <ParallaxLayer offset={11} speed={0.2}>
-          <DuosShowCase />
+          <DuosScreen />
+        </ParallaxLayer>
+        <ParallaxLayer offset={12} speed={0.2}>
+          <DuoWerds />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={12} speed={0.2}>
+        <ParallaxLayer offset={13} speed={0.2}>
           <EndSection />
         </ParallaxLayer>
       </Parallax>
