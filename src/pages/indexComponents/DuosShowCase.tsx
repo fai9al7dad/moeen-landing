@@ -9,7 +9,9 @@ export default function DuosShowCase() {
     >
       <div className="lg:w-2/4 px-5 lg:px-0">
         <div className="grid lg:grid-cols-2 mb-20 gap-10">
-          <img src={DuoScreen} />
+          <div className="flex items-center justify-center lg:justify-start">
+            <img src={DuoScreen} />
+          </div>
           <div className="text-center lg:text-right">
             <div className="text-2xl bold">شاشة الثنائيات</div>
             <div className="text-lg mt-10 ">
@@ -27,7 +29,9 @@ export default function DuosShowCase() {
               بدأ ورد جديد في أي وقت، أو قبول ورد سابق ليضاف إلى مصحفك
             </div>
           </div>
-          <img src={DuoScreen} className="" />
+          <div className="flex items-center justify-center lg:justify-end">
+            <img src={DuoScreen} className="" />
+          </div>
         </div>
       </div>
     </div>

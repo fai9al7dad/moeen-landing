@@ -22,7 +22,13 @@ export default function EndSection() {
       </div>
       <div className=" flex flex-col lg:flex-row items-center justify-center mt-5">
         <img src={googlePlayDownload} className="w-56 " />
-        <img src={appStoreDownload} className="w-48 -m-10 lg:m-0" />
+        <a
+          href="https://apps.apple.com/us/app/%D9%85%D8%B9%D9%8A%D9%86-%D9%85%D8%B5%D8%AD%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9/id1638765798"
+          target="_blank"
+          className="w-48 -m-10 lg:m-0"
+        >
+          <img src={appStoreDownload} />
+        </a>
       </div>
     </div>
   )

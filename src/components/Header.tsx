@@ -16,7 +16,7 @@ export default function Header({ parallaxRef }) {
   return (
     <>
       <div className="flex items-center justify-center  w-full z-40">
-        <div className="py-5 w-full px-5 lg:px-0 lg:w-2/4 fixed mt-24 backdrop-blur-lg bg-white/30 z-40 ">
+        <div className="py-5 w-full px-5   fixed mt-20 backdrop-blur-lg bg-white/10 z-40 ">
           <div className="flex items-center justify-between rtl">
             <div className="flex items-center">
               <svg
@@ -32,7 +32,11 @@ export default function Header({ parallaxRef }) {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <img src={appLogo} className="w-14 rounded-lg" />
+              <img
+                src={appLogo}
+                className="w-10 rounded-lg cursor-pointer"
+                onClick={() => navigateTo(0)}
+              />
             </div>
             {/* <div className="hidden lg:block">
               <div className="flex items-center text-sm">
@@ -52,12 +56,12 @@ export default function Header({ parallaxRef }) {
               </div>
             </div> */}
 
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
               <div className=" flex lg:flex-row items-center justify-center relative">
                 <img src={appStoreDownload} className="w-36" />
                 <img src={googlePlayDownload} className="w-36 lg:m-0" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -118,7 +122,14 @@ export default function Header({ parallaxRef }) {
             </div>
           </div>
           <div className=" flex items-center justify-center relative">
-            <img src={appStoreDownload} className="w-48" />
+            <a
+              href="https://apps.apple.com/us/app/%D9%85%D8%B9%D9%8A%D9%86-%D9%85%D8%B5%D8%AD%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9/id1638765798"
+              target="_blank"
+              className="w-48"
+            >
+              <img src={appStoreDownload} />
+            </a>
+
             <img src={googlePlayDownload} className="w-48 lg:m-0" />
           </div>
         </animated.div>
