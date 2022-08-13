@@ -115,7 +115,7 @@ export default function Header({ parallaxRef }) {
               الثنائيات
             </div>
           </div>
-          <div className=" flex items-center justify-center relative">
+          {/* <div className=" flex items-center justify-center relative">
             <a
               href="https://apps.apple.com/us/app/%D9%85%D8%B9%D9%8A%D9%86-%D9%85%D8%B5%D8%AD%D9%81-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9/id1638765798"
               target="_blank"
@@ -128,7 +128,7 @@ export default function Header({ parallaxRef }) {
               src={googlePlayDownload}
               className="w-[10.5rem] lg:w-48 lg:m-0"
             />
-          </div>
+          </div> */}
         </animated.div>
       )}
     </>
