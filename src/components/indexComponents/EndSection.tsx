@@ -11,7 +11,7 @@ export default function EndSection() {
           <img src={logo} className="rounded-lg shadow-2xl w-60 " />
         </div>
 
-        <div className="mt-10 text-6xl lg:text-8xl bold relative">
+        <div className="mt-10 text-6xl lg:text-8xl bold relative text-center">
           تطبيق معين
           <div className="w-7 lg:w-12 h-7 lg:h-12 rounded-full bg-warning absolute bottom-0 left-28 lg:left-36 -z-10" />
           <div className="w-7 lg:w-12 h-7 lg:h-12 rounded-full bg-mistake absolute top-5 right-0 lg:right-20 -z-10" />

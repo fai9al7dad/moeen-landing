@@ -68,7 +68,7 @@ export default function Header({ parallaxRef }) {
       {showList && (
         <animated.div
           style={slidarAnimation}
-          className="h-screen  fixed z-50 w-screen bg-white py-10 flex flex-col justify-between px-5 rtl"
+          className="min-h-screen overflow-scroll fixed z-50 w-screen bg-white py-10 flex flex-col justify-between px-5 rtl"
         >
           <div>
             <svg
@@ -99,22 +99,16 @@ export default function Header({ parallaxRef }) {
             >
               الفكرة
             </div>
+
             <div
-              onClick={() => navigateTo(3)}
-              // href="#video"
-              className="ml-5 hover:bg-[#34d399] text-4xl w-fit py-1 px-3 rounded-lg hover:text-white cursor-pointer transition duration-150 mt-7 block"
-            >
-              مقطع تعريفي
-            </div>
-            <div
-              onClick={() => navigateTo(5)}
+              onClick={() => navigateTo(4)}
               // href="#warnings"
               className="ml-5 hover:bg-[#34d399] text-4xl w-fit py-1 px-3 rounded-lg hover:text-white cursor-pointer transition duration-150 mt-7 block"
             >
               التحديد
             </div>
             <div
-              onClick={() => navigateTo(10)}
+              onClick={() => navigateTo(9)}
               // href="#duo"
               className="ml-5 hover:bg-[#34d399] w-fit py-1 px-3 rounded-lg hover:text-white cursor-pointer transition duration-150 text-4xl mt-7 block"
             >
@@ -130,7 +124,10 @@ export default function Header({ parallaxRef }) {
               <img src={appStoreDownload} />
             </a>
 
-            <img src={googlePlayDownload} className="w-48 lg:m-0" />
+            <img
+              src={googlePlayDownload}
+              className="w-[10.5rem] lg:w-48 lg:m-0"
+            />
           </div>
         </animated.div>
       )}

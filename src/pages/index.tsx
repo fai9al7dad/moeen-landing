@@ -34,7 +34,7 @@ const IndexPage = () => {
   return (
     <div className="w-full h-full">
       <Header parallaxRef={parallax} />
-      <Parallax pages={14} ref={parallax}>
+      <Parallax pages={13} ref={parallax}>
         <ParallaxLayer offset={0} speed={0.2}>
           <HeroSection />
         </ParallaxLayer>
@@ -52,50 +52,50 @@ const IndexPage = () => {
         <ParallaxLayer offset={2} speed={0.2}>
           <IdeaSection />
         </ParallaxLayer>
-        <ShowCaseVideo />
-        <ParallaxLayer offset={4} speed={0.2}>
+        {/* <ShowCaseVideo /> */}
+        <ParallaxLayer offset={3} speed={0.2}>
           <Teaser />
         </ParallaxLayer>
-        <ParallaxLayer offset={5.1} speed={0.1}>
+        <ParallaxLayer offset={4.1} speed={0.1}>
           <img src={one} className="ml-[60%] lg:ml-[80%] w-28" />
         </ParallaxLayer>
-        <ParallaxLayer offset={5} speed={0.2}>
+        <ParallaxLayer offset={4} speed={0.2}>
           <WarningsShow />
         </ParallaxLayer>
-        <ParallaxLayer offset={6.1} speed={0.1}>
+        <ParallaxLayer offset={5.1} speed={0.1}>
           <img src={three} className="ml-[60%] lg:ml-[80%] w-32" />
         </ParallaxLayer>
-        <ParallaxLayer offset={6} speed={0.2}>
+        <ParallaxLayer offset={5} speed={0.2}>
           <MistakeShow />
         </ParallaxLayer>
-        <ParallaxLayer offset={7} speed={0.2}>
+        <ParallaxLayer offset={6} speed={0.2}>
           <EndingsWM />
         </ParallaxLayer>
-        <ParallaxLayer offset={8} speed={0.2}>
+        <ParallaxLayer offset={7} speed={0.2}>
           <HeaderShowCase />
         </ParallaxLayer>
-        <ParallaxLayer offset={9} speed={0.2}>
+        <ParallaxLayer offset={8} speed={0.2}>
           <SurahsShowCase />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={10} speed={0.2}>
+        <ParallaxLayer offset={9} speed={0.2}>
           <DuosIntroduction />
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={10.98}
+          offset={9.98}
           factor={7}
           speed={2}
           className="bg-[#34d399]/30"
         />
-        <ParallaxLayer offset={11} speed={0.2}>
+        <ParallaxLayer offset={10} speed={0.2}>
           <DuosScreen />
         </ParallaxLayer>
-        <ParallaxLayer offset={12} speed={0.2}>
+        <ParallaxLayer offset={11} speed={0.2}>
           <DuoWerds />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={13} speed={0.2}>
+        <ParallaxLayer offset={12} speed={0.2}>
           <EndSection />
         </ParallaxLayer>
       </Parallax>
