@@ -22,7 +22,7 @@ export default function HeaderShowCase() {
           <span className="bg-[#F49C14] border-2 border-[#FFE275] text-[#FFE275] px-2 rounded-lg  py-1 text-2xl">
             التنبيهات
           </span>{" "}
-          في الصفحة عن طريق النظر الى الشريط العلوي
+          في الصفحة عن طريق النظر إلى الشريط العلوي
         </div>
       </div>
     </div>

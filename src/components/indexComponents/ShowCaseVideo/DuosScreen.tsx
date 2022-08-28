@@ -15,7 +15,7 @@ export default function DuosScreen() {
           <div className="text-center lg:text-right">
             <div className="text-2xl bold">شاشة الثنائيات</div>
             <div className="text-lg mt-10 ">
-              قم بإرسال دعوة إلى صديقك، ثم إنتظر حتى يقبلك، الآن يمكنك بدأ ورد
+              قم بإرسال دعوة إلى صديقك، ثم انتظر حتى يقبلك، الآن يمكنك بدأ ورد
             </div>
           </div>
         </div>
