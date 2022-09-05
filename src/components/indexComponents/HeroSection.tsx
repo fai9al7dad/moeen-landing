@@ -26,7 +26,12 @@ const HeroSection = () => {
             >
               <img src={appStoreDownload} className="w-48 " />
             </a>
-            <img src={googlePlayDownload} className="w-56 -m-16 lg:m-0" />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.faisalhaddad.moeen"
+              target="_blank"
+            >
+              <img src={googlePlayDownload} className="w-56 -m-16 lg:m-0" />
+            </a>
           </div>
         </div>
       </div>
