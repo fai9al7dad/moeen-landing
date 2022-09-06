@@ -9,6 +9,7 @@
     "@react-spring/web": "^9.5.2",
     "gatsby": "^4.20.0",
     "gatsby-plugin-google-gtag": "^4.21.0",
+    "gatsby-plugin-hotjar": "^1.1.1",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
