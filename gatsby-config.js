@@ -26,9 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-hotjar`,
       options: {
-        includeInDevelopment: true, // optional parameter to include script in development
-        id: "3145294",
-        sv: "6",
+        id: 3145294,
+        sv: 6,
       },
     },
     `gatsby-plugin-image`,

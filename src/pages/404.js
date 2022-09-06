@@ -3,10 +3,12 @@ import * as React from "react"
 import Seo from "../components/seo"
 
 const NotFoundPage = () => (
-  <>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </>
+  <div className="h-screen flex flex-col items-center justify-center">
+    <h1>عذرا.. هذه الصفحة غير موجودة</h1>
+    <a href="/" className="mt-10">
+      عودة إلى الصفحة الرئيسية
+    </a>
+  </div>
 )
 
 export const Head = () => <Seo title="404: Not Found" />
