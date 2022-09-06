@@ -42,7 +42,8 @@ const Seo: React.FC<props> = ({ description, title, children }) => {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
       <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={metaDescription} />1{children}
+      <meta name="twitter:description" content={metaDescription} />
+      {children}
     </>
   )
 }
